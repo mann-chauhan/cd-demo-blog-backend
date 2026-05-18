@@ -8,6 +8,6 @@ RUN chmod +x gradlew
 
 RUN ./gradlew build -x test
 
-EXPOSE 8080
+EXPOSE 10000
 
 CMD ["sh", "-c", "java -jar $(ls build/libs/*.jar | grep -v plain)"]
